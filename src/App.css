@@ -1,0 +1,156 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+
+  margin: 3rem auto 0 ;
+  text-align: center; 
+}
+
+.HeaderBorder{
+  border-bottom:  rgb(192, 153, 54) solid 5px;
+  width: 5rem;
+  margin: 0 auto 20px auto ;
+}
+nav{
+  height: 7vh;
+  width: 70vw;
+  margin: auto;
+ 
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 7vh;  
+
+}
+nav ul li a{
+  color:  rgb(192, 153, 54);
+  text-decoration: none; 
+  padding: 7px;
+  
+}
+nav ul li a:hover{
+  background-color: rgb(192, 153, 54);
+  color: white;  
+}
+.Container{
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: 1rem auto; 
+}
+.Card{
+  width: 27rem;
+  height: 39vh;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Picture{
+  width: 26.5rem;
+  height: 26vh;
+  border: solid 3px rgb(192, 153, 54);
+  border-radius: 4px;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.TextBlock{
+  width: 26.5rem;
+  height: 12vh;
+  margin: 0.5rem 0 0;
+}
+.NamePrice{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+.Price{
+  color: rgb(192, 153, 54);
+}
+.MenuDescription{
+  margin-top: 1rem;
+  color: rgb(98, 100, 100);
+}
+
+@media screen and (min-width:768px){
+  .Container{
+    width: 45rem;
+    margin: 1rem auto;
+  }
+  .Card{
+  display: flex;
+  flex-direction: row;
+  width: 40rem;
+  height: 27vh;
+  border: none;
+
+}
+.Picture{
+  width: 17rem;
+  height: 26vh;
+  margin: auto ;
+}
+img{
+  width: 100%;
+  height: 100%;
+  border: solid 1px rgb(192, 153, 54);
+}
+.TextBlock{
+  width: 23rem;
+  height: 26vh;
+  margin: auto 0px auto 8px ;
+  border: none;
+}
+
+}
+@media screen and (min-width:1200px){
+  .Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:87rem ;
+   
+   
+  }
+  .Card{
+    margin: 1rem 0.9rem;
+    width: 41.5rem;
+    height: 27vh;
+  
+   
+    
+  }
+  .Picture{
+    width: 40%;
+    height: 20vh;
+    margin: auto ;
+  }
+
+  .TextBlock{
+    width: 60%;
+    height: 20vh;
+    margin: auto 0px auto 8px ;
+   
+  }
+  .NamePrice{
+    width: 100%;
+   
+  }
+  .NamePrice h4{
+    width: 80%;
+    
+  }
+  .NamePrice p{
+    width: 20%;
+    
+  }
+}
